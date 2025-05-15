@@ -21,10 +21,9 @@ var Libro = /** @class */ (function () {
     }
     return Libro;
 }());
-// Creazione di due libri
+// Creazione di due libri direttamente nello stesso file
 var libro1 = new Libro("Divina Commedia", "Dante Alighieri");
 var libro2 = new Libro("1984", "George Orwell");
-// Prestito e restituzione con arrow functions
 libro1.prendiInPrestito();
 libro2.prendiInPrestito();
 console.log("Disponibilit\u00E0 di \"".concat(libro1.titolo, "\": ").concat(libro1.disponibile));

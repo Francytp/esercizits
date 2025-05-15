@@ -24,11 +24,10 @@ class Libro {
     };
 }
 
-// Creazione di due libri
+// Creazione di due libri direttamente nello stesso file
 const libro1 = new Libro("Divina Commedia", "Dante Alighieri");
 const libro2 = new Libro("1984", "George Orwell");
 
-// Prestito e restituzione con arrow functions
 libro1.prendiInPrestito();
 libro2.prendiInPrestito();
 console.log(`Disponibilità di "${libro1.titolo}": ${libro1.disponibile}`);
@@ -36,3 +35,4 @@ console.log(`Disponibilità di "${libro2.titolo}": ${libro2.disponibile}`);
 
 libro1.restituisci();
 console.log(`Disponibilità di "${libro1.titolo}": ${libro1.disponibile}`);
+
